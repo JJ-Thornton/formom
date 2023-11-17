@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mitches Stitches - A sanctuary where the art of quilting meets the warmth of cherished memories." />
+    <meta name="keywords" content="quilting, crafts, memories, handmade quilts, family, art" />
+    <meta name="author" content="Mitches Stitches" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/about.css">
+    <title>About Us</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="headerFlex">
+        <h1 class="company">Mitches Stitches</h1>
+
+        <ul class="navMenu">
+          <li class="navItem"><a href="index.html">Home</a></li>
+          <li class="navItem"><a href="about.html">About Us</a></li>
+          <li class="navItem"><a href="contact.html">Contact Us</a></li>
+          <li class="navItem"><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about">
+            <h1 class="bioHero">Welcome to <span style="font-family: 'agbalumo';color: #ecc637;">Mitches Stitches</span></h1>
+            <p class="bioSub">A sanctuary where the art of quilting meets the warmth of cherished memories.</p>
+            <p class="bioP1">Founded by Michelle Thornton, Mitches Stitches is more than a business; it's a celebration of passion and craftsmanship inspired by Michelle's mother, who instilled in her a love for the timeless art of quilting.</p>
+            <p class="bioP2">Michelle, a devoted wife to her husband Rob and a mother of four, has seamlessly woven family values into the fabric of Mitches Stitches. With a deep-seated affection for the craft, Michelle transforms beloved clothes into exquisite quilts, each stitch a testament to her dedication and love for the art.</p>
+            <p class="bioP3">At Mitches Stitches, the creation of every quilt is a personal journey. It's about taking garments laden with memories and transforming them into unique heirlooms that forge tangible connections to your most treasured moments. These quilts transcend mere products; they are expressions of love, comfort, and a beautiful way of preserving the essence of what matters most.</p>
+            <p class="bioP4">Whether adorning your home with a distinctive touch or presenting a meaningful gift to a loved one, Mitches Stitches invites you to step into a world where each quilt is a masterpiece—an embodiment of history, love, and the joy of creating lasting memories.</p>
+    </div>
+
+    <div id="section3">
+        <div class="contactForm">
+          <form
+            id="contactForm"
+            class="formWrapper"
+            action="/php/process-form.php"
+            method="post"
+          >
+            <label class="formLabel" for="name">Name:</label>
+            <input
+              class="formInput"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              autocomplete="given-name"
+            /><br /><br />
+            <label class="formLabel" for="email">Email:</label>
+            <input
+              class="formInput"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="janedoe@email.com"
+              autocomplete="email"
+            /><br /><br />
+            <label class="formLabel" for="message">Message:</label>
+            <textarea
+              class="messageTextArea"
+              id="message"
+              name="message"
+              rows="3"
+              placeholder="I'd like to talk with you more about getting a quilt made!"
+              autocomplete="off"
+            ></textarea
+            ><br /><br />
+            <input
+              class="submitInput"
+              type="submit"
+              value="Contact"
+              onClick="changeButtonText(); return false;"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyWrapper">
+      <p class="copyright">&copy;Mitches Stitches 2023</p>
+    </div>
+  </body>
+</html>

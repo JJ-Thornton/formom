@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Mitches Stitches - Handmade Quilts" />
+    <meta
+      name="description"
+      content="Mitches Stitches transforms your loved ones' clothes into beautiful, handmade quilts. Each quilt is a unique keepsake, hand-stitched with love and precision. Experience the warmth and charm of our quilts."
+    />
+    <meta
+      name="keywords"
+      content="Mitches Stitches, Handmade Quilts, Loved Ones' Clothes, Keepsakes, Hand-stitched, Unique Gifts, Home Decor"
+    />
+    <meta name="author" content="Mitches Stitches" />
+
+    <link rel="stylesheet" href="styles/home.css" />
+
+    <title>Mitches Stitches</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="headerFlex">
+        <h1 class="company">Mitches Stitches</h1>
+
+        <ul class="navMenu">
+          <li class="navItem"><a href="index.html">Home</a></li>
+          <li class="navItem"><a href="about.html">About Us</a></li>
+          <li class="navItem"><a href="contact.html">Contact Us</a></li>
+          <li class="navItem"><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mainBody">
+      <div id="section1" class="description">
+        <p class="descripBio">
+          Step into the heart of Mitches Stitches, where we lovingly transform
+          cherished clothes into exquisite quilts. Each quilt is a testament to
+          our passion, hand-stitched with precision, offering comfort and a
+          tangible connection to your memories. Perfect for adding a unique
+          touch to your home or gifting to loved ones, our quilts are more than
+          products; they are heirlooms to be treasured.
+        </p>
+      </div>
+
+      <div id="section2" class="photos">
+        <div class="quiltSpreadFlex">
+          <div class="quiltSpread">
+            <img
+              height="1536px"
+              width="2048px"
+              src="styles/images/blackQuilt2.JPEG"
+              alt="Black quilt."
+            />
+          </div>
+
+          <div class="quiltSpread">
+            <img
+              height="1873px"
+              width="1733px"
+              src="styles/images/grandma1.jpg"
+              alt="Quilt with unique center square, offcuts put together."
+            />
+          </div>
+
+          <div class="quiltSpread">
+            <img
+              height="1626px"
+              width="1540px"
+              src="styles/images/softballQuilt2.jpg"
+              alt="Softball shirts and jerseys memory quilt."
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="section3">
+        <div class="contactForm">
+          <form
+            id="contactForm"
+            class="formWrapper"
+            action="/php/process-form.php"
+            method="post"
+          >
+            <label class="formLabel" for="name">Name:</label>
+            <input
+              class="formInput"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              autocomplete="given-name"
+            /><br /><br />
+            <label class="formLabel" for="email">Email:</label>
+            <input
+              class="formInput"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="janedoe@email.com"
+              autocomplete="email"
+            /><br /><br />
+            <label class="formLabel" for="message">Message:</label>
+            <textarea
+              class="messageTextArea"
+              id="message"
+              name="message"
+              rows="3"
+              placeholder="I'd like to talk with you more about getting a quilt made!"
+              autocomplete="off"
+            ></textarea
+            ><br /><br />
+            <input
+              class="submitInput"
+              type="submit"
+              value="Contact"
+              onClick="changeButtonText(); return false;"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyWrapper">
+      <p class="copyright">&copy;Mitches Stitches 2023</p>
+    </div>
+
+    <script src="js/misc.js"></script>
+  </body>
+</html>

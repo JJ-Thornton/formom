@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="quilting, crafts, memories, handmade quilts, family, art"
+    />
+    <meta name="author" content="Mitches Stitches" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="headerFlex">
+        <h1 class="company">Mitches Stitches</h1>
+
+        <ul class="navMenu">
+          <li class="navItem"><a href="index.html">Home</a></li>
+          <li class="navItem"><a href="about.html">About Us</a></li>
+          <li class="navItem"><a href="contact.html">Contact Us</a></li>
+          <li class="navItem"><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="contactUs">
+      <div class="contactForm">
+        <form
+          id="contactForm"
+          class="formWrapper-Contact"
+          action="/php/process-form.php"
+          method="post"
+        >
+          <label class="formLabel-Contact" for="name">Name:</label>
+          <input
+            class="formInput-Contact"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            autocomplete="given-name"
+          /><br /><br />
+          <label class="formLabel-Contact" for="email">Email:</label>
+          <input
+            class="formInput-Contact"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="janedoe@email.com"
+            autocomplete="email"
+          /><br /><br />
+          <label class="formLabel-Contact" for="message">Message:</label>
+          <textarea
+            class="messageTextArea-Contact"
+            id="message"
+            name="message"
+            rows="3"
+            placeholder="I'd like to talk with you more about getting a quilt made!"
+            autocomplete="off"
+          ></textarea
+          ><br /><br />
+          <input
+            class="submitInput-Contact"
+            type="submit"
+            value="Contact"
+            onClick="changeButtonText(); return false;"
+          />
+        </form>
+      </div>
+    </div>
+    <div class="copyWrapper">
+      <p class="copyright">&copy;Mitches Stitches 2023</p>
+    </div>
+  </body>
+</html>

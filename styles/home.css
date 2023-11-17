@@ -1,0 +1,247 @@
+/* colors: 
+orange: #F85112;
+yellow?: #ECC637;
+lighterColor: #E5EFA0;
+blueish: #46666E;
+darkerBlue: #1C3945;
+*/
+
+/* for company name in header */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+/* solid maybes for descripBio*/
+/* Goudy Bookletter 1911*/
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+/* Aboreto */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+/* Milonga */
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+
+/* for inc at bottom */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+
+/* 
+font-family: 'Amita', serif; 
+pass: font-family: 'Goudy Bookletter 1911', serif;
+maybe: font-family: 'Aboreto';
+pass: font-family: 'Milonga', serif;
+*/
+
+:root {
+  --burntOrange: #f85112;
+  --mustardYellow: #ecc637;
+  --lighterGreen: #e5efa0;
+  --blueish: #46666e;
+  --darkerBlue: #1c3945;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--blueish);
+}
+
+.header {
+  background-color: var(--darkerBlue);
+
+  padding: 20px 30px;
+}
+
+.headerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'agbalumo';
+}
+
+.company {
+  margin: 0;
+  font-size: 3rem;
+  color: var(--mustardYellow);
+}
+
+.navMenu {
+  list-style: none;
+  display: flex;
+}
+
+.navItem {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: var(--mustardYellow);
+}
+
+.navItem a:hover {
+  color: var(--burntOrange);
+  text-decoration: overline;
+}
+
+.mainBody {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.descripBio {
+  color: var(--lighterGreen);
+  font-size: 1.5rem;
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.quiltSpreadFlex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 10px), 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.quiltSpread {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--burntOrange);
+  gap: 10px;
+}
+
+.quiltSpread img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contactForm {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.formWrapper {
+  width: 50%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--darkerBlue);
+  border-radius: 8px;
+  font-family: 'Milonga', serif;
+}
+
+.formLabel {
+  font-size: 1.225rem;
+  color: var(--mustardYellow);
+}
+
+.formInput::placeholder {
+  color: var(--blueish);
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.formInput {
+  font-size: 1.125rem;
+  color: var(--darkerBlue);
+  background-color: var(--lighterGreen);
+  font-family: 'Goudy Bookletter 1911', serif;
+  border-radius: 6px;
+}
+
+.messageTextArea {
+  resize: vertical;
+  font-size: 1.125rem;
+  background-color: var(--lighterGreen);
+  color: var(--darkerBlue);
+  font-family: 'Goudy Bookletter 1911', serif;
+  border-radius: 4px;
+}
+
+.messageTextArea::placeholder {
+  color: var(--darkerBlue);
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.submitInput {
+  background-color: var(--lighterGreen);
+  padding: 10px;
+  width: 8rem;
+  border-radius: 8px;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 1.225rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.submitInput:hover {
+  background-color: var(--burntOrange);
+}
+
+.copyWrapper {
+  bottom: 0;
+  left: 4rem;
+  text-align: left;
+  padding: 2rem;
+}
+
+.copyright {
+  margin: 0;
+  font-family: 'Libre Barcode 39 Text';
+  font-size: 1.5rem;
+  color: var(--mustardYellow);
+}
+
+@media (max-width: 768px) {
+  .headerFlex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navMenu {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navItem {
+    margin: 5px 0;
+  }
+
+  .quiltSpreadFlex {
+    grid-template-columns: 1fr;
+  }
+
+  .quiltSpread {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+
+  .formWrapper {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--darkerBlue);
+    border-radius: 8px;
+    font-family: 'Milonga', serif;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .messageTextArea {
+    width: 100%;
+  }
+
+  .submitInput {
+    width: 100%;
+  }
+
+  .copyWrapper {
+    bottom: 0;
+    left: 2rem;
+    text-align: left;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore a collection of beautifully crafted quilts, each telling a unique story and capturing cherished memories."
+    />
+    <meta name="keywords" content="quilt, handmade, crafts, memories" />
+    <meta name="author" content="Mitches Stitches" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/products.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="headerFlex">
+        <h1 class="company">Mitches Stitches</h1>
+
+        <ul class="navMenu">
+          <li class="navItem"><a href="index.html">Home</a></li>
+          <li class="navItem"><a href="about.html">About Us</a></li>
+          <li class="navItem"><a href="contact.html">Contact Us</a></li>
+          <li class="navItem"><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h1 class="pageHero">Products</h1>
+
+    <div id="section2" class="photos">
+      <div class="photoGrid">
+        <div class="quilt">
+          <img
+            height="1536px"
+            width="2048px"
+            src="styles/images/blackQuilt1.JPEG"
+            alt="Black quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1536px"
+            width="2048px"
+            src="styles/images/blackQuilt2.JPEG"
+            alt="Black quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1536px"
+            width="2048px"
+            src="styles/images/blackQuilt3.JPEG"
+            alt="Black quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1536px"
+            width="2048px"
+            src="styles/images/blueBackedQuilt.JPEG"
+            alt="Black Quilt with blue backing."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="755px"
+            width="669px"
+            src="styles/images/blackQuilt4.png"
+            alt="Black quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1536px"
+            width="2048px"
+            src="styles/images/blueQuilt.JPEG"
+            alt="Blue quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1873px"
+            width="1733px"
+            src="styles/images/grandma1.jpg"
+            alt="Quilt with unique center square, offcuts put together."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1745"
+            width="1772"
+            src="styles/images/grandma2.jpg"
+            alt="traditional patterned quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1536px"
+            width="2048px"
+            src="styles/images/greenQuilt.JPEG"
+            alt="Green quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="727px"
+            width="776px"
+            src="styles/images/pinkQuilt.png"
+            alt="Pink quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1536px"
+            width="2048px"
+            src="styles/images/purpleQuilt.JPEG"
+            alt="Purple quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1536px"
+            width="2048px"
+            src="styles/images/royalPurpleQuilt.JPEG"
+            alt="Royal purple quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="1626px"
+            width="1540px"
+            src="styles/images/softballQuilt2.jpg"
+            alt="Softball shirts and jerseys memory quilt."
+          />
+        </div>
+        <div class="quilt">
+          <img
+            height="791px"
+            width="582px"
+            src="styles/images/softballQuilt1.jpg"
+            alt="Softball shirts and jerseys memory quilt."
+          />
+        </div>
+
+        <div class="quilt">
+          <div class="contactForm">
+            <form
+              id="contactForm"
+              class="formWrapper-Products"
+              action="/php/process-form.php"
+              method="post"
+            >
+              <label class="formLabel" for="name">Name:</label>
+              <input
+                class="formInput"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                autocomplete="given-name"
+              /><br /><br />
+              <label class="formLabel" for="email">Email:</label>
+              <input
+                class="formInput"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="janedoe@email.com"
+                autocomplete="email"
+              /><br /><br />
+              <label class="formLabel" for="message">Message:</label>
+              <textarea
+                class="messageTextArea"
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="I'd like to talk with you more about getting a quilt made!"
+                autocomplete="off"
+              ></textarea
+              ><br /><br />
+              <input
+                class="submitInput"
+                type="submit"
+                value="Contact"
+                onClick="changeButtonText(); return false;"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyWrapper">
+      <p class="copyright">&copy;Mitches Stitches 2023</p>
+    </div>
+  </body>
+</html>

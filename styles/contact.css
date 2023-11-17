@@ -1,0 +1,101 @@
+.formWrapper-Contact {
+  width: 60%;
+  height: 70%;
+  margin: 0 auto;
+  padding: 5%;
+  background-color: var(--darkerBlue);
+  border-radius: 8px;
+  font-family: 'Milonga', serif;
+  box-sizing: border-box;
+}
+
+.formLabel-Contact {
+  font-size: 2vw;
+  color: var(--mustardYellow);
+}
+
+.formInput-Contact::placeholder {
+  color: var(--blueish);
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.formInput-Contact {
+  font-size: 1.5vw;
+  color: var(--darkerBlue);
+  background-color: var(--lighterGreen);
+  font-family: 'Goudy Bookletter 1911', serif;
+  border-radius: 6px;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+
+.messageTextArea-Contact {
+  resize: vertical;
+  font-size: 1.5vw;
+  background-color: var(--lighterGreen);
+  color: var(--darkerBlue);
+  font-family: 'Goudy Bookletter 1911', serif;
+  border-radius: 4px;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+
+.messageTextArea-Contact::placeholder {
+  color: var(--darkerBlue);
+  font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.submitInput-Contact {
+  background-color: var(--lighterGreen);
+  padding: 2vw;
+  width: 20vw;
+  border-radius: 8px;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 2vw;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.submitInput-Contact:hover {
+  background-color: var(--burntOrange);
+}
+
+@media (max-width: 768px) {
+  .formLabel-Contact {
+    font-size: 1.5rem;
+  }
+
+  .formInput-Contact::placeholder {
+    font-size: 1rem;
+  }
+
+  .formInput-Contact {
+    font-size: 1.5rem;
+    min-width: 150px;
+  }
+
+  .messageTextArea-Contact {
+    font-size: 1.5rem;
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .formLabel-Contact {
+    font-size: 1.2rem;
+  }
+
+  .formInput-Contact::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .formInput-Contact {
+    font-size: 1rem;
+    min-width: 120px;
+  }
+
+  .messageTextArea-Contact {
+    font-size: 1rem;
+    min-width: 120px;
+  }
+}
