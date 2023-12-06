@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mitch045/repositories/formom
+    - /bin/cp -R images $DEPLOYPATH
